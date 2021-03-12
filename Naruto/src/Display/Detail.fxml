@@ -22,17 +22,17 @@
             <Font size="14.0" />
          </font>
       </Text>
-      <Text layoutX="14.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HARDWARE" wrappingWidth="80.0">
+      <Text layoutX="14.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PHẦN CỨNG" wrappingWidth="80.0">
          <font>
             <Font size="14.0" />
          </font>
       </Text>
-      <Text layoutX="14.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MONITOR" wrappingWidth="80.0">
+      <Text layoutX="14.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MÀN HÌNH" wrappingWidth="80.0">
          <font>
             <Font size="14.0" />
          </font>
       </Text>
-      <Text layoutX="14.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GRAPHICS CARD" wrappingWidth="123.199951171875">
+      <Text layoutX="14.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CARD ĐỒ HỌA" wrappingWidth="123.199951171875">
          <font>
             <Font size="14.0" />
          </font>
@@ -42,12 +42,12 @@
             <Font size="14.0" />
          </font>
       </Text>
-      <Text layoutX="14.0" layoutY="408.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DESCRIPTION" wrappingWidth="123.199951171875">
+      <Text layoutX="14.0" layoutY="408.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MÔ TẢ" wrappingWidth="123.199951171875">
          <font>
             <Font size="14.0" />
          </font>
       </Text>
-      <Text layoutX="14.0" layoutY="579.0" strokeType="OUTSIDE" strokeWidth="0.0" text="COST" wrappingWidth="80.0">
+      <Text layoutX="14.0" layoutY="564.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GIÁ     (đồng)" wrappingWidth="112.79998779296875">
          <font>
             <Font size="14.0" />
          </font>
@@ -92,11 +92,15 @@
             <Font size="14.0" />
          </font>
       </Text>
-      <Button layoutX="181.0" layoutY="596.0" mnemonicParsing="false" onMouseClicked="#LoadDataDetail" text="Xem" />
+      <Button layoutX="24.0" layoutY="599.0" mnemonicParsing="false" onMouseClicked="#LoadDataDetail" prefHeight="30.0" prefWidth="138.0" text="XEM THÔNG TIN">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
       <Text fx:id="dataText" layoutX="84.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="230.13677978515625">
          <font>
             <Font size="14.0" />
          </font>
       </Text>
+      <Button fx:id="addCartButton" layoutX="236.0" layoutY="601.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="138.0" text="THÊM VÀO GIỎ HÀNG" />
    </children>
 </AnchorPane>

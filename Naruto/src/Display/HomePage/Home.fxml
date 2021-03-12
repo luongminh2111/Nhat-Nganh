@@ -33,7 +33,7 @@
             <Image url="@../image/home/cart.png" />
          </image>
       </ImageView>
-      <Button layoutX="972.0" layoutY="5.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="67.0" text="Giỏ hàng" />
+      <Button layoutX="972.0" layoutY="5.0" mnemonicParsing="false" onMouseClicked="#DisplayCart" prefHeight="30.0" prefWidth="67.0" text="Giỏ hàng" />
       <ButtonBar layoutX="170.0" layoutY="161.0" prefHeight="40.0" prefWidth="200.0" />
       <MenuButton fx:id="infoMenuButton" layoutX="1155.0" layoutY="5.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="98.0" text="Tài khoản">
         <items>

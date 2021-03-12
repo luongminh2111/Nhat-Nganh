@@ -22,17 +22,17 @@
             <Font size="14.0" />
          </font>
       </Text>
-      <Text layoutX="14.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HARDWARE" wrappingWidth="80.0">
+      <Text layoutX="14.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PHẦN CỨNG" wrappingWidth="80.0">
          <font>
             <Font size="14.0" />
          </font>
       </Text>
-      <Text layoutX="14.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MONITOR" wrappingWidth="80.0">
+      <Text layoutX="14.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MÀN HÌNH" wrappingWidth="80.0">
          <font>
             <Font size="14.0" />
          </font>
       </Text>
-      <Text layoutX="14.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GRAPHICS CARD" wrappingWidth="123.199951171875">
+      <Text layoutX="14.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CARD ĐỒ HỌA" wrappingWidth="123.199951171875">
          <font>
             <Font size="14.0" />
          </font>
@@ -42,12 +42,12 @@
             <Font size="14.0" />
          </font>
       </Text>
-      <Text layoutX="14.0" layoutY="408.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DESCRIPTION" wrappingWidth="123.199951171875">
+      <Text layoutX="14.0" layoutY="408.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MÔ TẢ" wrappingWidth="123.199951171875">
          <font>
             <Font size="14.0" />
          </font>
       </Text>
-      <Text layoutX="14.0" layoutY="579.0" strokeType="OUTSIDE" strokeWidth="0.0" text="COST" wrappingWidth="80.0">
+      <Text layoutX="14.0" layoutY="564.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GIÁ     (đồng)" wrappingWidth="112.79998779296875">
          <font>
             <Font size="14.0" />
          </font>

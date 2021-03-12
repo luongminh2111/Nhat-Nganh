@@ -16,7 +16,7 @@
       <font>
          <Font size="14.0" />
       </font></Button>
-    <Button fx:id="registrationButton" layoutX="1015.0" layoutY="379.0" mnemonicParsing="false" onAction="#Registration" prefHeight="43.0" prefWidth="206.0" style="-fx-background-color: #0be246;" text="TẠO TÀI KHOẢN MỚI" textFill="#e0450b">
+    <Button fx:id="registrationButton" layoutX="1015.0" layoutY="379.0" mnemonicParsing="false" onAction="#Registration" prefHeight="43.0" prefWidth="206.0" style="-fx-background-color: #097b81;" text="TẠO TÀI KHOẢN MỚI" textFill="#e3dc0b">
       <font>
          <Font size="14.0" />
       </font></Button>

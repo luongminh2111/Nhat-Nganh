@@ -2,6 +2,8 @@ package Login;
 
 import DAO.DetailDAO;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.text.Text;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -37,15 +39,21 @@ public class Detail {
     private Text costText;
 
     @FXML
-    private Text dataText;
+    private Button addCartButton;
 
+    public void ViewForm(String data)
+    {
+       // LoadDataDetail(data);
+    }
     public void LoadDataDetail() {
         DetailDAO connection = new DetailDAO();
        Connection connectDB = connection.ConnectionDb();
         // can chinh sua
         try {
             String sql = " SELECT * FROM storages WHERE cpu ='10th Generation Intel® Core™ i7-1065G7 (8 MB Cache, up to 3.90 GHz)'";
+            //String sql = " SELECT * FROM storages WHERE cpu =?";
             PreparedStatement preparedStatement = connectDB.prepareStatement(sql);
+           // preparedStatement.setString(1,data);
             ResultSet resultSet = preparedStatement.executeQuery();
             if (resultSet.next()) {
                 nameText.setText(resultSet.getString("category"));
@@ -60,15 +68,22 @@ public class Detail {
 
             }
 
-          // resultSet.close();
-          // preparedStatement.close();
-          // connectDB.close();
+           resultSet.close();
+           preparedStatement.close();
+           connectDB.close();
 
         } catch (Exception e) {
             e.printStackTrace();
             e.getCause();
         }
 
+    }
+    public void AddCart()
+    {
+        if(cpuText.getText()!=null)
+        {
+
+        }
     }
 
 }
