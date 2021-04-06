@@ -1,27 +1,45 @@
 package DAO;
 
+import HomePage.Computer;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+
 import java.sql.Connection;
-import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 
-public class DetailDAO {
-        public Connection DatabaseLink;
-        public Connection ConnectionDb()
-        {
-            String DatabaseName="Computer";
-            String DatabaseUser="postgres";
-            String Databasepass="luongminh";
-            String url= "jdbc:postgresql://localhost:5432/" + DatabaseName;
-            try
-            {
-                Class.forName("org.postgresql.Driver");
-                DatabaseLink= DriverManager.getConnection(url,DatabaseUser,Databasepass);
+public class DetailDAO extends DatabaseConnection{
+    public DetailDAO()
+    {
+        super();
+    }
+    public static ObservableList<Computer> LoadInfComputer() {
+        DetailDAO connection = new DetailDAO();
+        Connection connectDB = connection.ConnectionDb();
+        ObservableList<Computer> listComputer = FXCollections.observableArrayList();
+        try {
+            PreparedStatement preparedStatement = connectDB.prepareStatement(
+                    "SELECT * FROM storages WHERE category = 'Macbook Retina ME865'");
+            ResultSet resultSet = preparedStatement.executeQuery();
 
-            }catch (Exception e)
-            {
-                e.printStackTrace();
-                e.getCause();
+            if (resultSet.next()) {
+                listComputer.add(new Computer(resultSet.getString("category"),
+                        resultSet.getString("cpu"),
+                        resultSet.getString("ram"),
+                        resultSet.getString("hardware"),
+                        resultSet.getString("monitor"),
+                        resultSet.getString("graphicscard"),
+                        resultSet.getString("guarantee"),
+                        resultSet.getString("description"),
+                        resultSet.getInt("cost")));
             }
-            return DatabaseLink;
+            resultSet.close();
+            preparedStatement.close();
+            connectDB.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+            e.getCause();
         }
-
+        return listComputer;
+    }
 }

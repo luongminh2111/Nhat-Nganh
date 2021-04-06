@@ -1,34 +1,13 @@
 package DAO;
-
 import HomePage.Computer;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-public class CardDAO {
-    public Connection DatabaseLink;
-    public Connection ConnectionDb()
-    {
-        String DatabaseName="Computer";
-        String DatabaseUser="postgres";
-        String Databasepass="luongminh";
-        String url= "jdbc:postgresql://localhost:5432/" + DatabaseName;
-        try
-        {
-            Class.forName("org.postgresql.Driver");
-            DatabaseLink= DriverManager.getConnection(url,DatabaseUser,Databasepass);
-
-        }catch (Exception e)
-        {
-            e.printStackTrace();
-            e.getCause();
-        }
-        return DatabaseLink;
-    }
+public class CardDAO extends DatabaseConnection {
     public static ObservableList<Computer> LoadDataComputer()
     {
         CardDAO connection = new CardDAO();
@@ -37,18 +16,18 @@ public class CardDAO {
         try
         {
             PreparedStatement preparedStatement = connectDB.prepareStatement(
-                    "SELECT category, cpu, ram, hardware, monitor, graphicscard, gia FROM storages");
+                    "SELECT sto.category, sto.cpu, sto.ram, sto.hardware, sto.monitor, sto.graphicscard, sto.cost" +
+                    " FROM storages sto, cart WHERE cart.username = '1' and cart.category = sto.category");
             ResultSet resultSet = preparedStatement.executeQuery();
-
-            if (resultSet.next())
+            while (resultSet.next())
             {
-                listComputer.add(new Computer(resultSet.getString("category"),
+                listComputer.add(new Computer(resultSet.getString("category"), resultSet.getString("cpu"), resultSet.getString("category"),
                         resultSet.getString("cpu"),
                         resultSet.getString("ram"),
                         resultSet.getString("hardware"),
                         resultSet.getString("monitor"),
                         resultSet.getString("graphicscard"),
-                        resultSet.getInt("gia")));
+                        resultSet.getInt("cost")));
             }
             resultSet.close();
             preparedStatement.close();

@@ -13,5 +13,6 @@ module Naruto {
     opens HomePage;
     opens HomePage.Laptop;
     opens HomePage.PhuKien;
-
+    opens HomePage.KhuyenMai;
+    opens HomePage.SuaChua;
 }

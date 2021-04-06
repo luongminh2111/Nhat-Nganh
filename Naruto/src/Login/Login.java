@@ -9,36 +9,45 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.Statement;
+
+import java.sql.*;
 
 public class Login {
     @FXML
     private Button loginButton;
-
-    @FXML
-    private Button registrationButton;
     @FXML
     private Text loginMessage;
     @FXML
     private TextField username;
     @FXML
     private PasswordField password;
+    private static String oboeru;
+    public static String getOboeru() {
+        return oboeru;
+    }
+    public void setOboeru(String oboeru) {
+        this.oboeru = oboeru;
+    }
+
     public void validateLogin()
     {
         LoginDAO connection = new LoginDAO();
         Connection connectDB = connection.ConnectionDb();
         String login = " SELECT customer.username, customer.password FROM customer WHERE customer.username = '"+ username.getText() +
                 "' AND customer.password = '"+ password.getText() + "'";
+        setOboeru(username.getText());
+       // String insertCart = " INSERT INTO cart(username) values (?)";
         try {
             Statement statement =connectDB.createStatement();
             ResultSet queryResult1 = statement.executeQuery(login);
+           // PreparedStatement preparedStatement1 = connectDB.prepareStatement(insertCart);
+           // preparedStatement1.setString(1, username.getText());
             while (queryResult1.next())
             {
                 if(queryResult1.getInt(1)==1 )
                 {
                     loginMessage.setText("dang nhap thanh cong");
+                 //   preparedStatement1.execute();
                     HomeForm();
                 }
                 else

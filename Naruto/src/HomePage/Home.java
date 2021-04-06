@@ -1,52 +1,66 @@
 package HomePage;
-
-import Login.Detail;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Label;
 import javafx.scene.control.MenuButton;
-import javafx.scene.image.ImageView;
+import javafx.scene.control.MenuItem;
+import javafx.scene.control.RadioButton;
 import javafx.stage.Stage;
 
 public class Home {
+    public MenuItem item1;
     @FXML
     private MenuButton infoMenuButton;
 
     @FXML
-    private Label abcviews;
+    private RadioButton cpt1;
 
     public void Back()
     {
         LoginPage();
     }
-    public void GO()
-    {
-        DetailForm();
-    }
-
-    public void DisplayDetail()
-     {
-         DetailForm();
-     }
     public void DisplayCart()
     {
         CartForm();
     }
-  /*   public void ViewDetail()
-     {
-         String data = abcviews.getText().toString();
-         Detail detail = new Detail();
-         detail.ViewForm(data);
-     }*/
+    public void KhuyenMaiForm()
+    {
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("/Display/HomePage/KhuyenMai.fxml"));
+            Stage khuyenMaiStage = new Stage();
+            khuyenMaiStage.setTitle("Khuyen Mai");
+            khuyenMaiStage.setScene(new Scene(root, 1280, 700));
+            Stage stage = (Stage) infoMenuButton.getScene().getWindow();
+            stage.close();
+            khuyenMaiStage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+            e.getCause();
+        }
+    }
+    public void SuaChuaForm()
+    {
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("/Display/HomePage/SuaChua.fxml"));
+            Stage suaChuaStage = new Stage();
+            suaChuaStage.setTitle("Sua Chua");
+            suaChuaStage.setScene(new Scene(root, 1280, 700));
+            Stage stage = (Stage) infoMenuButton.getScene().getWindow();
+            stage.close();
+            suaChuaStage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+            e.getCause();
+        }
+    }
     public void DetailForm() {
         try {
             Parent root = FXMLLoader.load(getClass().getResource("/Display/Detail.fxml"));
-            Stage registrationStage = new Stage();
-            registrationStage.setTitle("DETAIL");
-            registrationStage.setScene(new Scene(root, 400, 650));
-            registrationStage.show();
+            Stage detailStage = new Stage();
+            detailStage.setTitle("DETAIL");
+            detailStage.setScene(new Scene(root, 700, 700));
+            detailStage.show();
         } catch (Exception e) {
             e.printStackTrace();
             e.getCause();
@@ -55,12 +69,12 @@ public class Home {
     public void LoginPage() {
         try {
             Parent root = FXMLLoader.load(getClass().getResource("/Display/Login.fxml"));
-            Stage LoginStage = new Stage();
-            LoginStage.setTitle("DETAIL");
-            LoginStage.setScene(new Scene(root, 1280, 700));
+            Stage loginStage = new Stage();
+            loginStage.setTitle("TRANG CHU");
+            loginStage.setScene(new Scene(root, 1280, 700));
             Stage stage = (Stage) infoMenuButton.getScene().getWindow();
             stage.close();
-            LoginStage.show();
+            loginStage.show();
         } catch (Exception e) {
             e.printStackTrace();
             e.getCause();
@@ -72,10 +86,13 @@ public class Home {
             Stage cartStage = new Stage();
             cartStage.setTitle("CART");
             cartStage.setScene(new Scene(root, 1280, 700));
+            Stage stage = (Stage) infoMenuButton.getScene().getWindow();
+            stage.close();
             cartStage.show();
         } catch (Exception e) {
             e.printStackTrace();
             e.getCause();
         }
     }
+
 }

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -13,16 +14,19 @@
             <Font size="18.0" />
          </font>
       </Text>
-      <TableView fx:id="tableViews" layoutX="40.0" layoutY="109.0" prefHeight="500.0" prefWidth="1200.0">
+      <TableView fx:id="tableViews" layoutX="40.0" layoutY="109.0" prefHeight="450.0" prefWidth="1200.0">
         <columns>
-          <TableColumn fx:id="categoryColumn" minWidth="100.0" prefWidth="75.0" text="CATEGORY" />
-          <TableColumn fx:id="cpuColumn" minWidth="200.0" prefWidth="75.0" text="CPU" />
-            <TableColumn fx:id="ramColumn" minWidth="180.0" prefWidth="75.0" text="RAM" />
-            <TableColumn fx:id="hardwareColumn" minWidth="180.0" prefWidth="75.0" text="HARDWARE" />
-            <TableColumn fx:id="monitorColumn" minWidth="180.0" prefWidth="75.0" text="MONITOR" />
-            <TableColumn fx:id="graphicsColumn" minWidth="220.0" prefWidth="75.0" text="GRAPHICS CARD" />
-            <TableColumn fx:id="costColumn" minWidth="100.0" prefWidth="139.2000732421875" text="COST" />
+          <TableColumn fx:id="categoryColumn" minWidth="100.0" prefWidth="146.3999900817871" text="CATEGORY" />
+          <TableColumn fx:id="cpuColumn" minWidth="167.1999969482422" prefWidth="193.59999084472656" text="CPU" />
+            <TableColumn fx:id="ramColumn" minWidth="160.0" prefWidth="160.0" text="RAM" />
+            <TableColumn fx:id="hardwareColumn" minWidth="172.79998779296875" prefWidth="172.79998779296875" text="HARDWARE" />
+            <TableColumn fx:id="monitorColumn" minWidth="180.0" prefWidth="194.4000244140625" text="MONITOR" />
+            <TableColumn fx:id="graphicsColumn" minWidth="181.60003662109375" prefWidth="181.60003662109375" text="GRAPHICS CARD" />
+            <TableColumn fx:id="costColumn" minWidth="100.0" prefWidth="153.5999755859375" text="COST" />
         </columns>
       </TableView>
+      <Button fx:id="backButton" layoutX="1015.0" layoutY="642.0" mnemonicParsing="false" onMouseClicked="#HomePage" prefHeight="26.0" prefWidth="115.0" text="BACK" />
+      <Button layoutX="147.0" layoutY="642.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="115.0" style="-fx-background-color: #f21818;" text="DELETE" textFill="#f7f014" underline="true" />
+      <Button layoutX="574.0" layoutY="642.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="115.0" style="-fx-background-color: #0bdc47;" text="BILL" textFill="#d90d0d" textOverrun="CENTER_WORD_ELLIPSIS" underline="true" />
    </children>
 </AnchorPane>

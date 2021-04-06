@@ -9,14 +9,7 @@ public class Computer {
     private String graphicsCard;
     private int cost;
 
-    public Computer(String category, String cpu, String ram, String hardware, String monitor, String graphicsCard, int cost) {
-        this.category = category;
-        this.cpu = cpu;
-        this.ram = ram;
-        this.hardware = hardware;
-        this.monitor = monitor;
-        this.graphicsCard = graphicsCard;
-        this.cost = cost;
+    public Computer(String category, String cpu, String ram, String hardware, String monitor, String graphicsCard, String guarantee, String description, int cost) {
     }
 
     public String getCategory() {
