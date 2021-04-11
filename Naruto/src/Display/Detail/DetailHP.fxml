@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HomePage.Detail.HP">
+    <Text fx:id="nameText" fill="#2a08d1" layoutX="360.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="274.80517578125">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Text>
+    <Text fx:id="cpuId" layoutX="218.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CPU" wrappingWidth="80.0">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Text>
+    <Text fx:id="ramId" layoutX="218.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RAM" wrappingWidth="80.0">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Text>
+    <Text fx:id="hardwareId" layoutX="211.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PHẦN CỨNG" wrappingWidth="80.0">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Text>
+    <Text fx:id="monitorId" layoutX="211.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MÀN HÌNH" wrappingWidth="80.0">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Text>
+    <Text fx:id="garphicsId" layoutX="211.0" layoutY="314.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CARD ĐỒ HỌA" wrappingWidth="123.199951171875">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Text>
+    <Text fx:id="guaranteeId" layoutX="211.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BẢO HÀNH" wrappingWidth="80.0">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Text>
+    <Text fill="#2d16db" layoutX="387.0" layoutY="406.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MÔ TẢ" textAlignment="CENTER" wrappingWidth="123.199951171875">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Text>
+    <Text layoutX="202.0" layoutY="575.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GIÁ     (VND)" wrappingWidth="112.79998779296875">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Text>
+    <Text fx:id="cpuText" layoutX="334.0" layoutY="109.0" lineSpacing="2.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="326.0">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Text>
+    <Text fx:id="ramText" layoutX="350.0" layoutY="162.0" lineSpacing="2.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="326.0">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Text>
+    <Text fx:id="hardwareText" layoutX="355.0" layoutY="213.0" lineSpacing="2.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="326.0">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Text>
+    <Text fx:id="monitorText" layoutX="347.0" layoutY="253.0" lineSpacing="2.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="326.0">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Text>
+    <Text fx:id="graphicsCardText" layoutX="340.0" layoutY="313.0" lineSpacing="2.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="326.0">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Text>
+    <Text fx:id="guaranteeText" layoutX="340.0" layoutY="360.0" lineSpacing="2.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="314.79998779296875">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Text>
+    <Text fx:id="descrpText" layoutX="236.0" layoutY="439.0" lineSpacing="2.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="411.60009765625">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Text>
+    <Text fx:id="costText" layoutX="334.0" layoutY="574.0" lineSpacing="2.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="298.0">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Text>
+    <Button fx:id="addCartButton" layoutX="379.0" layoutY="623.0" mnemonicParsing="false" onMouseClicked="#AddCart" prefHeight="26.0" prefWidth="138.0" text="THÊM VÀO GIỎ HÀNG" />
+    <RadioButton fx:id="cpt1" layoutX="11.0" layoutY="94.0" mnemonicParsing="false" onMouseClicked="#DisplayDetailHP" prefHeight="20.0" prefWidth="183.0" text="HP ZBook 17 G2 i7" textAlignment="RIGHT">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </RadioButton>
+    <RadioButton fx:id="cpt2" layoutX="11.0" layoutY="167.0" mnemonicParsing="false" onMouseClicked="#DisplayDetailHP" prefHeight="20.0" prefWidth="183.0" text="HP Envy 13 X360">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </RadioButton>
+    <RadioButton fx:id="cpt3" layoutX="11.0" layoutY="248.0" mnemonicParsing="false" onMouseClicked="#DisplayDetailHP" prefHeight="18.0" prefWidth="183.0" text="HP Pavilion 13 I3">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </RadioButton>
+    <RadioButton fx:id="cpt4" layoutX="14.0" layoutY="327.0" mnemonicParsing="false" onMouseClicked="#DisplayDetailHP" prefHeight="18.0" prefWidth="183.0" text="HP ZBook 15 G5 Xeon ">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </RadioButton>
+    <RadioButton fx:id="cpt5" layoutX="14.0" layoutY="414.0" mnemonicParsing="false" onMouseClicked="#DisplayDetailHP" prefHeight="18.0" prefWidth="183.0" text="HP Pavilion 15 i5">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </RadioButton>
+    <RadioButton fx:id="cpt6" layoutX="14.0" layoutY="499.0" mnemonicParsing="false" onMouseClicked="#DisplayDetailHP" prefHeight="18.0" prefWidth="183.0" text="HP Elitebook 820 G3">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </RadioButton>
+    <Line endX="-11.399993896484375" endY="644.5999755859375" layoutX="209.0" layoutY="49.0" startX="-11.399993896484375" startY="-49.0" stroke="#e2380d" />
+    <Line endX="-11.399993896484375" endY="644.5999755859375" layoutX="207.0" layoutY="48.0" startX="-11.399993896484375" startY="-49.0" stroke="#e2380d" />
+    <Text fx:id="acount" fill="#f00202" layoutX="379.0" layoutY="675.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="138.39999999999998" />
+</AnchorPane>

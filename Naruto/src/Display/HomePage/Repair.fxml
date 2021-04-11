@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HomePage.Repair.Repair">
+    <Label layoutX="3.0" prefHeight="40.0" prefWidth="1280.0" style="-fx-background-color: #1224b1;" text="       HỆ THỐNG BÁN LẺ LAPTOP TEAM 10                                                    UY TÍN SỐ 1 LỚP 122044" textFill="#f0ecec">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Label>
+    <ImageView fitHeight="29.0" fitWidth="37.0" layoutX="1126.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@../image/login/user.png" />
+        </image>
+    </ImageView>
+    <ImageView fitHeight="29.0" fitWidth="29.0" layoutX="943.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@../image/home/cart.png" />
+        </image>
+    </ImageView>
+    <ButtonBar layoutX="170.0" layoutY="161.0" prefHeight="40.0" prefWidth="200.0" />
+    <MenuButton fx:id="infoMenuButton" layoutX="1155.0" layoutY="5.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="98.0" text="Tài khoản">
+        <items>
+            <MenuItem fx:id="item1" mnemonicParsing="false" text="Thông tin cá nhân" />
+            <MenuItem fx:id="item2" mnemonicParsing="false" onAction="#Back" text="Thoát" />
+        </items>
+        <font>
+            <Font size="13.0" />
+        </font>
+    </MenuButton>
+    <Label layoutX="3.0" layoutY="40.0" prefHeight="100.0" prefWidth="1280.0" style="-fx-background-color: #1658b4;" textFill="#1658b4" wrapText="true" />
+    <ImageView fitHeight="88.0" fitWidth="98.0" layoutX="110.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@../image/home/lap.png" />
+        </image>
+    </ImageView>
+    <Text fill="#f5f1f1" layoutX="222.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TEAM_10.VN" wrappingWidth="185.33680725097656">
+        <font>
+            <Font size="24.0" />
+        </font>
+    </Text>
+    <Text fill="#fff8f8" layoutX="170.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your number one choice" textAlignment="CENTER" wrappingWidth="233.29571533203125">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Text>
+    <TextField layoutX="408.0" layoutY="78.0" prefHeight="32.0" prefWidth="606.0" promptText="Bạn cần tìm....">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </TextField>
+    <ImageView fitHeight="50.0" fitWidth="48.0" layoutX="1140.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@../image/home/news.png" />
+        </image>
+    </ImageView>
+    <Text fill="#f8f5f5" layoutX="1126.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Báo lá cải">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Text>
+    <Label layoutX="3.0" layoutY="140.0" prefHeight="50.0" prefWidth="1280.0" style="-fx-background-color: #1658b4;" />
+    <Separator layoutX="182.0" layoutY="152.0" orientation="VERTICAL" prefHeight="40.0" prefWidth="2.0" />
+    <Separator layoutX="367.0" layoutY="152.0" orientation="VERTICAL" prefHeight="40.0" prefWidth="2.0" />
+    <Separator layoutX="546.0" layoutY="152.0" orientation="VERTICAL" prefHeight="40.0" prefWidth="2.0" />
+    <Separator layoutX="730.0" layoutY="152.0" orientation="VERTICAL" prefHeight="40.0" prefWidth="2.0" />
+    <Separator layoutX="912.0" layoutY="152.0" orientation="VERTICAL" prefHeight="40.0" prefWidth="2.0" />
+    <Separator layoutX="1097.0" layoutY="152.0" orientation="VERTICAL" prefHeight="40.0" prefWidth="2.0" />
+    <Label layoutX="71.0" layoutY="154.0" text="DELL" textAlignment="CENTER" textFill="#fffdfd">
+        <font>
+            <Font size="19.0" />
+        </font>
+    </Label>
+    <Label layoutX="263.0" layoutY="154.0" text="HP" textFill="#fffcfc">
+        <font>
+            <Font size="19.0" />
+        </font>
+    </Label>
+    <Label layoutX="418.0" layoutY="154.0" text="THINKPAD" textFill="#fff9f9">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Label>
+    <Label layoutX="626.0" layoutY="154.0" text="APPLE" textFill="#fffbfb">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Label>
+    <Label layoutX="783.0" layoutY="154.0" text="PHỤ KIỆN" textFill="#fffcfc">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Label>
+    <Label layoutX="951.0" layoutY="154.0" text="KHUYẾN MÃI" textFill="#fffdfd">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Label>
+    <Label layoutX="1140.0" layoutY="154.0" text="SỬA CHỮA" textFill="#fffafa">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Label>
+    <Label layoutX="976.0" layoutY="6.0" onMouseClicked="#DisplayCart" text="Giỏ Hàng" textFill="WHITE">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Label>
+   <Label layoutX="986.0" layoutY="251.0" text="Hãy nhập thông tin liên hệ" textAlignment="CENTER" textFill="#df0e0e">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Label>
+   <Label layoutX="897.0" layoutY="314.0" text="Họ tên">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Label>
+   <Label layoutX="874.0" layoutY="362.0" text="Sô điện thoại">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Label>
+   <Label alignment="CENTER" layoutX="65.0" layoutY="254.0" prefHeight="27.0" prefWidth="233.0" style="-fx-background-color: #1658b4;" text="CHỌN THƯƠNG HIỆU" textAlignment="CENTER" textFill="#ffffff">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Label>
+   <Label alignment="CENTER" layoutX="64.0" layoutY="358.0" prefHeight="27.0" prefWidth="234.0" style="-fx-background-color: #1658b4;" text="CHỌN TÊN THIẾT BỊ" textFill="#fff9f9">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Label>
+   <Label layoutX="2.0" layoutY="191.0" prefHeight="40.0" prefWidth="1280.0" textAlignment="CENTER" underline="true" />
+   <Text layoutX="22.0" layoutY="217.0" onMouseClicked="#HomePage" strokeType="OUTSIDE" strokeWidth="0.0" text="Trang chủ" underline="true">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Text>
+   <Text layoutX="92.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&gt;&gt;" />
+   <Text layoutX="112.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sửa chữa">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Text>
+   <TextField fx:id="nameText" layoutX="992.0" layoutY="311.0" prefHeight="26.0" prefWidth="200.0" promptText="Nguyễn Văn A" />
+   <TextField fx:id="phoneText" layoutX="992.0" layoutY="358.0" prefHeight="26.0" prefWidth="200.0" promptText="0123456789" />
+   <Label layoutX="875.0" layoutY="415.0" text="Thời gian đến">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Label>
+   <TextField fx:id="timeText" layoutX="992.0" layoutY="412.0" prefHeight="26.0" prefWidth="200.0" promptText="Đại Học Bách Khoa" />
+   <Label alignment="CENTER" layoutX="64.0" layoutY="458.0" prefHeight="27.0" prefWidth="234.0" style="-fx-background-color: #1658b4;" text="CHỌN LỖI ĐANG GẶP" textFill="#f8f7f7">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Label>
+   <Text layoutX="896.0" layoutY="363.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+   <Label layoutX="2.0" layoutY="600.0" prefHeight="100.0" prefWidth="1280.0" style="-fx-background-color: #1081a4;" textFill="#eaeced">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Label>
+   <Text fill="#fdf7f7" layoutX="86.0" layoutY="628.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="CHÍNH SÁCH HỖ TRỢ">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Text>
+   <Text fill="#fdf7f7" layoutX="484.0" layoutY="628.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="THÔNG TIN LIÊN HỆ">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Text>
+   <Text fill="#fdf7f7" layoutX="908.0" layoutY="628.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="CÁCH THỨC THANH TOÁN">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Text>
+   <Text fill="#fdf7f7" layoutX="34.0" layoutY="655.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Bảo trì, bảo hành" underline="true">
+      <font>
+         <Font size="13.0" />
+      </font>
+   </Text>
+   <Text fill="#fdf7f7" layoutX="34.0" layoutY="681.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Trả góp, lãi suất" underline="true">
+      <font>
+         <Font size="13.0" />
+      </font>
+   </Text>
+   <Text fill="#fdf7f7" layoutX="188.0" layoutY="655.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text=" Bảo mật thông tin" underline="true">
+      <font>
+         <Font size="13.0" />
+      </font>
+   </Text>
+   <Text fill="#fdf7f7" layoutX="188.0" layoutY="681.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Hướng dẫn thanh toán" underline="true">
+      <font>
+         <Font size="13.0" />
+      </font>
+   </Text>
+   <Text fill="#fdf7f7" layoutX="485.0" layoutY="655.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Team 10 lớp 122044" underline="true">
+      <font>
+         <Font size="13.0" />
+      </font>
+   </Text>
+   <Text fill="#fdf7f7" layoutX="471.0" layoutY="681.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Đại học bách khoa hà nội" underline="true">
+      <font>
+         <Font size="13.0" />
+      </font>
+   </Text>
+   <ImageView fitHeight="40.0" fitWidth="75.0" layoutX="845.0" layoutY="647.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../image/PhuKien/viettin.png" />
+      </image>
+   </ImageView>
+   <ImageView fitHeight="40.0" fitWidth="75.0" layoutX="945.0" layoutY="647.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../image/PhuKien/argi.png" />
+      </image>
+   </ImageView>
+   <ImageView fitHeight="40.0" fitWidth="75.0" layoutX="1044.0" layoutY="647.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../image/PhuKien/saccom.png" />
+      </image>
+   </ImageView>
+   <Button fx:id="sendButton" layoutX="1049.0" layoutY="543.0" mnemonicParsing="false" onMouseClicked="#SendButton" prefHeight="30.0" prefWidth="86.0" style="-fx-background-color: #df3838;" text="GỬI" textFill="#f0f0f0">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Button>
+   <ComboBox fx:id="trademarkCbb" layoutX="68.0" layoutY="298.0" prefHeight="26.0" prefWidth="226.0" promptText="Chọn Hãng" />
+   <Label layoutX="850.0" layoutY="462.0" text="Địa điểm muốn đến">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Label>
+   <ComboBox fx:id="placeCbb" layoutX="992.0" layoutY="459.0" prefHeight="26.0" prefWidth="200.0" promptText="Đại học Bách Khoa" />
+   <ComboBox fx:id="deviceCbb" layoutX="68.0" layoutY="402.0" onMouseClicked="#setData" prefHeight="26.0" prefWidth="226.0" promptText="Thiết Bị" />
+   <ComboBox fx:id="errorCbb" layoutX="68.0" layoutY="503.0" prefHeight="26.0" prefWidth="234.0" promptText="Lỗi" />
+   <Label fx:id="solutionText" alignment="TOP_CENTER" layoutX="356.0" layoutY="246.0" prefHeight="303.0" prefWidth="476.0" underline="true" wrapText="true">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Label>
+   <Text fx:id="notificationText" fill="#f20707" layoutX="980.0" layoutY="521.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="234.40000000000003" />
+   <Text fontSmoothingType="LCD" layoutX="488.0" layoutY="554.0" onMouseClicked="#Solution" strokeType="OUTSIDE" strokeWidth="0.0" text="Click để xem giải pháp" textAlignment="CENTER" underline="true" wrappingWidth="226.4000000000001">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Text>
+   <Text fx:id="anounceText" fill="#df0a0a" fontSmoothingType="LCD" layoutX="72.0" layoutY="563.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" underline="true" wrappingWidth="226.4000000000001">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Text>
+
+</AnchorPane>

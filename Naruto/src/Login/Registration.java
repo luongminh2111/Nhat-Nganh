@@ -58,21 +58,12 @@ public class Registration {
                 preparedStatement1.setString(4, addressText.getText());
                 preparedStatement1.setString(5, username.getText());
                 preparedStatement1.setString(6, password.getText());
-                boolean check = preparedStatement1.execute();
-                if(check)
-                {
-                    acount.setText("Bạn đã đăng kí thành công !");
-                } else
-                {
-                    acount.setText("Đăng kí thất bại!");
-                }
-
-
+                preparedStatement1.execute();
             } catch (Exception e) {
                 e.printStackTrace();
                 e.getCause();
             }
-
+            acount.setText("Bạn đã đăng kí thành công !");
         }
     }
     public void cancelButtionOnAction()

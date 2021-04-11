@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HomePage.Laptop.LaptopThinkPad">
+    <children>
+        <GridPane layoutX="14.0" layoutY="203.0" prefHeight="490.0" prefWidth="937.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <AnchorPane prefHeight="154.0" prefWidth="460.0">
+                    <children>
+                        <ImageView fitHeight="132.0" fitWidth="231.0" layoutX="23.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../image/ThinkPad/ThinkPad-P50.png" />
+                            </image>
+                        </ImageView>
+                        <Text layoutX="259.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ThinkPad P50 i7" textAlignment="CENTER" wrappingWidth="121.5377197265625">
+                            <font>
+                                <Font size="21.0" />
+                            </font>
+                        </Text>
+                        <Text layoutX="407.0" layoutY="148.0" onMouseClicked="#DetailTPForm" strokeType="OUTSIDE" strokeWidth="0.0" text="Chi tiết" textAlignment="CENTER" underline="true">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Text>
+                        <Circle fill="DODGERBLUE" layoutX="390.0" layoutY="142.0" radius="9.0" rotate="-66.6" stroke="BLACK" strokeType="INSIDE" />
+                    </children>
+                </AnchorPane>
+                <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+                    <children>
+                        <ImageView fitHeight="140.0" fitWidth="241.0" layoutX="37.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../image/ThinkPad/thinkpad-X1-Nano-2-300x274.png" />
+                            </image>
+                        </ImageView>
+                        <Circle fill="DODGERBLUE" layoutX="393.0" layoutY="142.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Text layoutX="411.0" layoutY="148.0" onMouseClicked="#DetailTPForm" strokeType="OUTSIDE" strokeWidth="0.0" text="Chi tiết" textAlignment="CENTER" underline="true">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Text>
+                        <Text layoutX="261.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lenovo Thinkpad X1 Nano" textAlignment="CENTER" wrappingWidth="121.5377197265625">
+                            <font>
+                                <Font size="21.0" />
+                            </font>
+                        </Text>
+                    </children>
+                </AnchorPane>
+                <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
+                    <children>
+                        <ImageView fitHeight="140.0" fitWidth="249.0" layoutX="14.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../image/ThinkPad/thiết-kế-300x200.jpg" />
+                            </image>
+                        </ImageView>
+                        <Circle fill="DODGERBLUE" layoutX="390.0" layoutY="140.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Text layoutX="411.0" layoutY="145.0" onMouseClicked="#DetailTPForm" strokeType="OUTSIDE" strokeWidth="0.0" text="Chi tiết" textAlignment="CENTER" underline="true">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Text>
+                        <Text layoutX="263.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lenovo Legion 5 2020/ Ryzen" textAlignment="CENTER" wrappingWidth="121.5377197265625">
+                            <font>
+                                <Font size="21.0" />
+                            </font>
+                        </Text>
+                    </children>
+                </AnchorPane>
+                <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+                    <children>
+                        <ImageView fitHeight="146.0" fitWidth="218.0" layoutX="39.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../image/ThinkPad/17701-lenovo-thinkpad-x390-20q0s03m00-2-300x212.png" />
+                            </image>
+                        </ImageView>
+                        <Circle fill="DODGERBLUE" layoutX="393.0" layoutY="142.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Text layoutX="411.0" layoutY="148.0" onMouseClicked="#DetailTPForm" strokeType="OUTSIDE" strokeWidth="0.0" text="Chi tiết" textAlignment="CENTER" underline="true">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Text>
+                        <Text layoutX="263.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lenovo Thinkpad X390" textAlignment="CENTER" wrappingWidth="121.5377197265625">
+                            <font>
+                                <Font size="21.0" />
+                            </font>
+                        </Text>
+                    </children>
+                </AnchorPane>
+                <AnchorPane prefHeight="164.0" prefWidth="434.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <children>
+                        <ImageView fitHeight="140.0" fitWidth="249.0" layoutX="28.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../image/ThinkPad/Thinkpad-T470s-300x181.png" />
+                            </image>
+                        </ImageView>
+                        <Circle fill="DODGERBLUE" layoutX="395.0" layoutY="141.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Text layoutX="411.0" layoutY="146.0" onMouseClicked="#DetailTPForm" strokeType="OUTSIDE" strokeWidth="0.0" text="Chi tiết" textAlignment="CENTER" underline="true">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Text>
+                        <Text layoutX="282.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lenovo Thinkpad T470s" textAlignment="CENTER" wrappingWidth="121.5377197265625">
+                            <font>
+                                <Font size="21.0" />
+                            </font>
+                        </Text>
+                    </children>
+                </AnchorPane>
+                <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                    <children>
+                        <ImageView fitHeight="150.0" fitWidth="241.0" layoutX="29.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../image/ThinkPad/ThinkPad-T460s.png" />
+                            </image>
+                        </ImageView>
+                        <Circle fill="DODGERBLUE" layoutX="392.0" layoutY="146.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Text layoutX="411.0" layoutY="151.0" onMouseClicked="#DetailTPForm" strokeType="OUTSIDE" strokeWidth="0.0" text="Chi tiết" textAlignment="CENTER" underline="true">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Text>
+                        <Text layoutX="270.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ThinkPad T460s i7" textAlignment="CENTER" wrappingWidth="139.13771057128906">
+                            <font>
+                                <Font size="21.0" />
+                            </font>
+                        </Text>
+                    </children>
+                </AnchorPane>
+            </children>
+        </GridPane>
+        <AnchorPane prefHeight="150.0" prefWidth="1280.0" style="-fx-background-color: #1658b4;">
+            <children>
+                <ImageView fitHeight="88.0" fitWidth="139.0" layoutX="80.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../image/home/lap.png" />
+                    </image>
+                </ImageView>
+                <Text fill="WHITE" layoutX="179.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your number one choice">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Text>
+                <TextField layoutX="368.0" layoutY="82.0" prefHeight="32.0" prefWidth="606.0" promptText="Bạn cần tìm....">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </TextField>
+                <Text fill="WHITE" layoutX="37.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HỆ THỐNG BÁN LẺ LAPTOP TEAM 9                                                    UY TÍN SỐ 1 LỚP 122044" wrappingWidth="839.5191040039062">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Text>
+                <ImageView fitHeight="35.0" fitWidth="44.0" layoutX="1092.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../image/home/news.png" />
+                    </image>
+                </ImageView>
+                <Text fill="#f8f5f5" layoutX="1149.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Báo lá cải">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Text>
+                <ImageView fitHeight="29.0" fitWidth="37.0" layoutX="1134.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../image/login/user.png" />
+                    </image>
+                </ImageView>
+                <MenuButton fx:id="infoMenuButton" layoutX="1167.0" layoutY="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="106.0" style="-fx-background-color: #1658b4;" text="Tài khoản" textFill="WHITE" wrapText="true">
+                    <items>
+                        <MenuItem fx:id="item1" mnemonicParsing="false" text="Thông tin cá nhân" />
+                        <MenuItem fx:id="item2" mnemonicParsing="false" onAction="#LoginPage" text="Thoát" />
+                    </items>
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </MenuButton>
+                <Label layoutX="1053.0" layoutY="15.0" onMouseClicked="#CartForm" text="Giỏ Hàng" textFill="WHITE">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="29.0" fitWidth="29.0" layoutX="1024.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../image/home/c279cb36719778b027d5b6b0b900da02.jpg" />
+                    </image>
+                </ImageView>
+                <Label layoutX="946.0" layoutY="15.0" onMouseClicked="#CartForm" text="Trợ giúp" textFill="WHITE">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="32.0" fitWidth="39.0" layoutX="914.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../image/home/unnamed.jpg" />
+                    </image>
+                </ImageView>
+                <Text fill="WHITE" layoutX="188.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TEAM_9.VN">
+                    <font>
+                        <Font size="26.0" />
+                    </font>
+                </Text>
+            </children>
+        </AnchorPane>
+        <Label alignment="CENTER" layoutY="164.0" prefHeight="24.0" prefWidth="102.0" style="-fx-background-color: #039ddf;" text="TRANG CHỦ" textAlignment="CENTER" textFill="#f0f0f0">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Text layoutX="112.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&gt;&gt;" textAlignment="CENTER">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Text>
+        <Text layoutX="155.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="THINKPAD">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Separator layoutX="288.0" layoutY="151.0" orientation="VERTICAL" prefHeight="48.0" prefWidth="2.0" style="-fx-background-color: #039ddf;" />
+        <Separator layoutX="948.0" layoutY="151.0" orientation="VERTICAL" prefHeight="550.0" prefWidth="6.0" style="-fx-background-color: #ea3604;" />
+        <Text fill="#e80000" fontSmoothingType="LCD" layoutX="1078.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TIN THINKPAD" textAlignment="CENTER">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <ImageView fitHeight="132.0" fitWidth="153.0" layoutX="965.0" layoutY="193.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../image/ThinkPad/Screenshot-2021-04-03-201659.jpg" />
+            </image>
+        </ImageView>
+        <Label alignment="TOP_LEFT" cacheShape="false" centerShape="false" contentDisplay="TOP" focusTraversable="false" layoutX="1114.0" layoutY="203.0" onMouseClicked="#New1" prefHeight="112.0" prefWidth="152.0" scaleShape="false" text="Lenovo ra mắt TVC mới cho Thinkpad X1 Nano" textOverrun="LEADING_WORD_ELLIPSIS" underline="true" wrapText="true">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Text layoutX="1163.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thứ Sáu,22/4/2021" wrappingWidth="102.40000000000003" />
+        <ImageView fitHeight="70.0" fitWidth="168.0" layoutX="954.0" layoutY="372.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../image/ThinkPad/banner_1496118691-1.jpg" />
+            </image>
+        </ImageView>
+        <Label alignment="TOP_LEFT" cacheShape="false" centerShape="false" contentDisplay="TOP" focusTraversable="false" layoutX="1120.0" layoutY="351.0" onMouseClicked="#New2" prefHeight="112.0" prefWidth="152.0" scaleShape="false" text="Chiếc laptop Lenovo Thinkpad và vụ tai nạn xe máy bất ngờ" textOverrun="LEADING_WORD_ELLIPSIS" underline="true" wrapText="true">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Text layoutX="1164.0" layoutY="453.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thứ Sáu,15/4/2021" />
+        <ImageView fitHeight="90.0" fitWidth="152.0" layoutX="962.0" layoutY="517.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../image/ThinkPad/thinkpad-w541_1479274093.jpg" />
+            </image>
+        </ImageView>
+        <Label alignment="TOP_LEFT" cacheShape="false" centerShape="false" contentDisplay="TOP" focusTraversable="false" layoutX="1114.0" layoutY="517.0" onMouseClicked="#New3" prefHeight="112.0" prefWidth="152.0" scaleShape="false" text="Đánh giá Thinkpad W541 Laptop chuyên đồ họa 3D hiệu suất cao" textOverrun="LEADING_WORD_ELLIPSIS" underline="true" wrapText="true">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Text layoutX="1167.0" layoutY="612.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thứ Sáu,8/4/2021" />
+        <Label layoutX="1059.0" layoutY="652.0" onMouseClicked="#HomePage" text="&lt;&lt;    Quay lại trang chủ" textFill="#eb2c09" underline="true">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

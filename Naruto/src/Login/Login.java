@@ -36,12 +36,9 @@ public class Login {
         String login = " SELECT customer.username, customer.password FROM customer WHERE customer.username = '"+ username.getText() +
                 "' AND customer.password = '"+ password.getText() + "'";
         setOboeru(username.getText());
-       // String insertCart = " INSERT INTO cart(username) values (?)";
         try {
             Statement statement =connectDB.createStatement();
             ResultSet queryResult1 = statement.executeQuery(login);
-           // PreparedStatement preparedStatement1 = connectDB.prepareStatement(insertCart);
-           // preparedStatement1.setString(1, username.getText());
             while (queryResult1.next())
             {
                 if(queryResult1.getInt(1)==1 )
@@ -68,7 +65,7 @@ public class Login {
     {
         try
         {
-            Parent root = FXMLLoader.load(getClass().getResource("/Display/Registration.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("/Display/Login/Registration.fxml"));
             Stage registrationStage=new Stage();
             registrationStage.setTitle("Registration");
             registrationStage.setScene(new Scene(root, 400, 600));
